@@ -13,4 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require semantic-ui/dist/semantic.js
 //= require_tree .
+
+$( document ).ready(function() {
+    $('.ui .browse').popup({
+        inline   : true,
+        hoverable: true,
+        position : 'bottom left',
+        delay: {
+          show: 300,
+          hide: 300
+        }
+      });
+});
