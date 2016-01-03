@@ -8,7 +8,42 @@
 </head>
 <body>
 
-<%= yield %>
+<% if false %>
+  <%# Disable menu until the content arrives %>
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <%= render partial: "layouts/menu_links" %>
+    </div>
+  </div>
+
+  <div class="ui vertical inverted sidebar menu">
+    <%= render partial: "layouts/menu_links" %>
+  </div>
+<% end %>
+
+  <!-- Page Contents -->
+  <div class="pusher">
+   
+    <%= yield %>
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">About</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Sitemap</a>
+              <a href="#" class="item">Contact Us</a>
+            </div>
+          </div>
+          <div class="seven wide column">
+            <h4 class="ui inverted header">Mission</h4>
+            <p>We strive to create first class collaborative and supportive environment where people from all background and any place in the world can share knowledge and create high quality products.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
 </body>
 </html>

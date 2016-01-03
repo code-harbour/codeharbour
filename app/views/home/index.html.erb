@@ -1,49 +1,46 @@
-<div class="ui menu">
-  <a class="browse item">
-    Browse
-    <i class="dropdown icon"></i>
-  </a>
-  <div class="ui fluid popup bottom left transition hidden" style="top: 554px; left: 1px; bottom: auto; right: auto; width: 757px;">
-    <div class="ui four column relaxed divided grid">
-      <div class="column">
-        <h4 class="ui header">Fabrics</h4>
-        <div class="ui link list">
-          <a class="item">Cashmere</a>
-          <a class="item">Linen</a>
-          <a class="item">Cotton</a>
-          <a class="item">Viscose</a>
-        </div>
+<div class="ui teal inverted vertical masthead center aligned segment bg-img">
+
+  <% if false %>
+  <%# Disable menu until the content arrives %>
+  <div class="ui container">
+    <div class="ui teal large secondary inverted network menu">
+      <a class="toc item">
+        <i class="sidebar icon"></i>
+      </a>
+      <%= render partial: "layouts/menu_links" %>
+    </div>
+  </div>
+  <% end %>
+
+  <div class="ui text container">
+    <h1 class="ui inverted header">
+      Code Harbour
+    </h1>
+    <h2>Learn how to create web applications</h2>
+    <div class="ui huge primary button">Join Us <i class="right arrow icon"></i></div>
+  </div>
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui middle aligned stackable grid container mastcontent">
+    <div class="row">
+      <div class="eight wide column">
+
+        <h3 class="ui red header">LEARN TO CREATE</h3>
+        <p>We believe that best way of learning is by doing. In Code Harbour learning programming is a journey. You will create number complete applications with opportinuty to publish them on web. Starting from the beginning and advancing step by step.</p>
+
+        <h3 class="ui red header">Start from anywhere</h3>
+        <p>Wheter you are high school student, fresh university graduate, professional who want to change career, or skilled software engineer we are looking forward to meet you. Everyone with passion for solving problems is wellcomed.</p>
+
+        <h3 class="ui red header">Be part of the team</h3>
+        <p>...</p>
+
+        <h3 class="ui red header">Proffesional - Agile - Fun</h3>
+        <p>...</p>
       </div>
-      <div class="column">
-        <h4 class="ui header">Size</h4>
-        <div class="ui link list">
-          <a class="item">Small</a>
-          <a class="item">Medium</a>
-          <a class="item">Large</a>
-          <a class="item">Plus Sizes</a>
-        </div>
-      </div>
-      <div class="column">
-        <h4 class="ui header">Colors</h4>
-        <div class="ui link list">
-          <a class="item">Neutrals</a>
-          <a class="item">Brights</a>
-          <a class="item">Pastels</a>
-        </div>
-      </div>
-      <div class="column">
-        <h4 class="ui header">Types</h4>
-        <div class="ui link list">
-          <a class="item">Knitwear</a>
-          <a class="item">Outerwear</a>
-          <a class="item">Pants</a>
-          <a class="item">Shoes</a>
-        </div>
+      <div class="six wide right floated column">
+        <%# image_tag "hands-community.jpg" %>
       </div>
     </div>
   </div>
-  <a class="item">
-    <i class="cart icon"></i>
-    Checkout
-  </a>
 </div>

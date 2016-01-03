@@ -17,13 +17,24 @@
 //= require_tree .
 
 $( document ).ready(function() {
-    $('.ui .browse').popup({
-        inline   : true,
-        hoverable: true,
-        position : 'bottom left',
-        delay: {
-          show: 300,
-          hide: 300
-        }
-      });
+  
+   // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+
 });
